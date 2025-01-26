@@ -28,7 +28,7 @@ class ScrapeNest:
         
         try:
             headers = {'User-Agent': self.ua.random}
-            response = requests.get(normalized, headers==headers, timeout=10)
+            response = requests.get(normalized, headers=headers, timeout=10)
             soup = BeautifulSoup(response.content, 'html.parser')
             self.page_content[normalized] = soup.get_text(separator=" ", strip=True)
             self.visited_urls.add(normalized)

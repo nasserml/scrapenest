@@ -8,12 +8,11 @@ setup(
         'beautifulsoup4>=4.11.1',
         'requests>=2.28.1',
         'fake-useragent>=1.1.3',
-        'tldextract>=3.4.0'
     ],
     author="naserml",
     author_email='mnasserone@gmail.com',
     description="Intelligent web crawling with content nesting",
-    long_description=open("README.md").read(),
+    long_description=open("README.md", encoding='utf-8').read(),
     long_description_content_type="text/markdown",
     classifiers=[
         "Programming Language :: Python :: 3",
